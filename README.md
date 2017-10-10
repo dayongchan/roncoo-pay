@@ -44,32 +44,35 @@ jQuery 框架：DWZ
 
 ## 安装部署
 
-### 1. 项目结构说明：
-1.运营管理系统登录账号密码：admin/123456
+### 1. 项目结构说明
 
-2.商户后台系统登录账号密码：在boss运营后台添加用户时录入手机和密码
+1. 运营管理系统登录账号密码：admin/123456
 
-3.roncoo-pay-common-core：公共类工程，存放整个系统通用的一些类或者设置；不用单独部署
+2. 商户后台系统登录账号密码：在boss运营后台添加用户时录入手机和密码
 
-4.roncoo-pay-service：核心业务类工程，整个支付系统的业务逻辑实现；不用单独部署
+3. roncoo-pay-common-core：公共类工程，存放整个系统通用的一些类或者设置；不用单独部署
 
-5.roncoo-pay-app-notify：通知应用工程，主要是通知接入系统的商户提交的订单的状态；独立jar方式启动
+4. roncoo-pay-service：核心业务类工程，整个支付系统的业务逻辑实现；不用单独部署
 
-6.roncoo-pay-app-order-polling：通知应用工程，主要是拉取银行或者第三发支付支付结果的信息；
+5. roncoo-pay-app-notify：通知应用工程，主要是通知接入系统的商户提交的订单的状态；独立jar方式启动
 
-7.roncoo-pay-app-reconciliation：对账应用工程，主要是对账处理，包括拉取对账文件、处理对账文件、进行对账、处理和保存差错记录；独立jar方式启动
+6. roncoo-pay-app-order-polling：通知应用工程，主要是拉取银行或者第三发支付支付结果的信息；
 
-8.roncoo-pay-app-settlement：结算应用工程，独立jar方式启动
+7. roncoo-pay-app-reconciliation：对账应用工程，主要是对账处理，包括拉取对账文件、处理对账文件、进行对账、处理和保存差错记录；独立jar方式启动
 
-9.roncoo-pay-web-boss：运营管理后台，部署tomcat启动
+8. roncoo-pay-app-settlement：结算应用工程，独立jar方式启动
 
-10.roncoo-pay-web-gateway：支付网关工程，部署tomcat启动
+9. roncoo-pay-web-boss：运营管理后台，部署tomcat启动
 
-11.roncoo-pay-web-sample-shop：模拟商城工程，支付测试展示；部署tomcat启动
+10. roncoo-pay-web-gateway：支付网关工程，部署tomcat启动
 
-12.roncoo-pay-web-merchant：商户后台工程，部署tomcat启动
+11. roncoo-pay-web-sample-shop：模拟商城工程，支付测试展示；部署tomcat启动
+
+12. roncoo-pay-web-merchant：商户后台工程，部署tomcat启动
+
 
 ### 2. 步骤
+
 1. 创建数据库，导入初始化脚本《database.sql》
 
 2. 修改系统数据库连接roncoo-pay-service/src/main/resources/jdbc.properties
@@ -89,6 +92,27 @@ jQuery 框架：DWZ
 9. 拷贝roncoo-pay-web-boss.war、roncoo-pay-web-gateway.war、roncoo-pay-web-sample-shop.war、roncoo-pay-web-merchant.war至tomcat启动
 
 
+
+## 数据表清单
+* 对账差错表      rp_account_check_mistake
+* 对账批次表       rp_account_check_batch
+* 差错暂存池       rp_account_check_mistake_scratch_pool
+* 支付订单        rp_trade_payment_order
+* 支付记录表       rp_trade_payment_record
+* 退款记录表       rp_refund_record
+* 通知记录日志表     rp_notify_record_log
+* 通知记录表       rp_notify_record
+* 支付产品表       rp_pay_product
+* 支付方式        rp_pay_way
+* 支付设置表       rp_user_pay_config
+* 每日待结算汇总     rp_sett_daily_collect
+* 用户信息表       rp_user_info
+* 用户银行账户表     rp_user_bank_account
+* 第三方支付信息表    rp_user_pay_info
+* 结算记录        rp_sett_record
+* 结算记录附件      rp_sett_record_annex
+* 资金账户流水表     rp_account_history
+* 资金账户表       rp_account
 
 ## 应用架构：
 ![应用架构](http://git.oschina.net/uploads/images/2016/0726/171546_239efc3b_860625.jpeg "应用架构")
