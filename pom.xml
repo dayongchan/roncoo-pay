@@ -37,20 +37,6 @@
 		<module>roncoo-pay-app-order-polling</module>
 	</modules>
 
-	<!-- 配置maven地址 -->
-	<distributionManagement>
-		<repository>
-			<id>nexus-releases</id>
-			<name>Nexus Release Repository</name>
-			<url>http://192.168.1.221:8081/nexus/content/repositories/releases/</url>
-		</repository>
-		<snapshotRepository>
-			<id>nexus-snapshots</id>
-			<name>Nexus Snapshot Repository</name>
-			<url>http://192.168.1.221:8081/nexus/content/repositories/snapshots/</url>
-		</snapshotRepository>
-	</distributionManagement>
-
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
@@ -338,15 +324,15 @@
 			</dependency>
 
 			<dependency>
-				<groupId>alipay</groupId>
+				<groupId>com.alipay</groupId>
 				<artifactId>alipay-trade-sdk</artifactId>
 				<version>1.0</version>
 			</dependency>
 
 			<dependency>
-				<groupId>alipay</groupId>
-				<artifactId>alipay-sdk-java20151021120052</artifactId>
-				<version>1.0</version>
+				<groupId>com.alibaba</groupId>
+				<artifactId>alipay-sdk</artifactId>
+				<version>20170307</version>
 			</dependency>
 
 			<dependency>
@@ -463,4 +449,31 @@
 			<timezone>+8</timezone>
 		</developer>
 	</developers>
+
+	<repositories>
+		<repository>
+			<id>public</id>
+			<name>Public Repository</name>
+			<url>http://nexus.developer.car-house.cn:8081/nexus/content/groups/public/</url>
+		</repository>
+	</repositories>
+	<pluginRepositories>
+		<pluginRepository>
+			<id>public</id>
+			<name>Public Repository</name>
+			<url>http://nexus.developer.car-house.cn:8081/nexus/content/groups/public/</url>
+		</pluginRepository>
+	</pluginRepositories>
+	<distributionManagement>
+		<repository>
+			<id>releases</id>
+			<name>Nexus Release Repository</name>
+			<url>http://nexus.developer.car-house.cn:8081/nexus/content/repositories/releases/</url>
+		</repository>
+		<snapshotRepository>
+			<id>snapshots</id>
+			<name>Nexus Snapshot Repository</name>
+			<url>http://nexus.developer.car-house.cn:8081/nexus/content/repositories/snapshots/</url>
+		</snapshotRepository>
+	</distributionManagement>
 </project>

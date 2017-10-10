@@ -209,12 +209,12 @@
 		</dependency>
 
 		<dependency>
-			<groupId>alipay</groupId>
-			<artifactId>alipay-sdk-java20151021120052</artifactId>
+			<groupId>com.alibaba</groupId>
+			<artifactId>alipay-sdk</artifactId>
 		</dependency>
 
 		<dependency>
-			<groupId>alipay</groupId>
+			<groupId>com.alipay</groupId>
 			<artifactId>alipay-trade-sdk</artifactId>
 		</dependency>
 
