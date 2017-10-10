@@ -4,6 +4,6 @@
     <title></title>
 </head>
 <body>
-    ${codeUrl}
+${codeUrl}
 </body>
 </html>

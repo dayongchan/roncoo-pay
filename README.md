@@ -25,7 +25,7 @@ jQuery 框架：DWZ
     `CPU：1核
     内存：1G`
 
-## 主要特点：
+## 主要特点
 
 1. 具备支付系统通用的支付、对账、清算、资金账户管理、支付订单管理等功能；
 
@@ -56,7 +56,7 @@ jQuery 框架：DWZ
 
 5. roncoo-pay-app-notify：通知应用工程，主要是通知接入系统的商户提交的订单的状态；独立jar方式启动
 
-6. roncoo-pay-app-order-polling：通知应用工程，主要是拉取银行或者第三发支付支付结果的信息；
+6. roncoo-pay-app-order-polling：通知应用工程，主要是拉取银行或者第三发支付支付结果的信息；独立jar方式启动
 
 7. roncoo-pay-app-reconciliation：对账应用工程，主要是对账处理，包括拉取对账文件、处理对账文件、进行对账、处理和保存差错记录；独立jar方式启动
 

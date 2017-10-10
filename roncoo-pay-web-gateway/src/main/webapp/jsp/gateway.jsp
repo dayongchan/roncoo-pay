@@ -1,7 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
 
 <%
     String path = request.getScheme() + "://" + request.getServerName()
@@ -36,20 +36,22 @@
             <li><span class="lb">订单编号：</span>${payGateWayPageShowVo.merchantOrderNo}</li>
             <li><span class="lb">商品名称：</span>${payGateWayPageShowVo.productName}</li>
         </ul>
-        <div class="price fr">￥<fmt:parseNumber type="number" pattern="#,#00.0#">${payGateWayPageShowVo.orderAmount}</fmt:parseNumber></div>
+        <div class="price fr">￥<fmt:parseNumber type="number"
+                                                pattern="#,#00.0#">${payGateWayPageShowVo.orderAmount}</fmt:parseNumber></div>
     </div>
     <div class="bd">
         <ul class="sele_pay_type">
             <span class="lb">请选择支付方式：</span>
-            <c:forEach items="${payGateWayPageShowVo.payWayEnumMap}" var="payWay" >
+            <c:forEach items="${payGateWayPageShowVo.payWayEnumMap}" var="payWay">
                 <li>
                     <label>
-                        <a href="${path}scanPay/toPay/${payGateWayPageShowVo.merchantOrderNo}/${payWay.key}/${payGateWayPageShowVo.payKey}" style="font-size: 30px">
+                        <a href="${path}scanPay/toPay/${payGateWayPageShowVo.merchantOrderNo}/${payWay.key}/${payGateWayPageShowVo.payKey}"
+                           style="font-size: 30px">
                             <c:if test="${payWay.key == 'WEIXIN'}">
-                                <img src="${path}images/logo2.png" alt="${payWay.value.desc}" />
+                                <img src="${path}images/logo2.png" alt="${payWay.value.desc}"/>
                             </c:if>
                             <c:if test="${payWay.key == 'ALIPAY'}">
-                                <img src="${path}images/logo.png" alt="${payWay.value.desc}" />
+                                <img src="${path}images/logo.png" alt="${payWay.value.desc}"/>
                             </c:if>
                         </a>
                     </label>
