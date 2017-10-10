@@ -18,6 +18,37 @@
 
 7. 龙果支付系统产品技术团队是一支拥有多年第三方支付系统设计研发经验的团队，会为龙果支付系统持续提供商业级的免费开源技术服务支持。
 
+######项目结构说明：
+
+1. roncoo-pay-app-notify
+    主要是通知接入系统的商户提交的订单的状态；
+
+2. roncoo-pay-app-order-polling
+    主要是拉取银行或者第三发支付支付结果的信息；
+
+3. roncoo-pay-app-reconciliation
+    主要是对账处理，包括拉取对账文件、处理对账文件、进行对账、处理和保存差错记录；
+
+4. roncoo-pay-app-settlement
+    主要是按商户来进行结算处理；
+
+5. roncoo-pay-common-core
+    存放整个系统通用的一些类或者设置；
+
+6. roncoo-pay-service
+    整个支付系统的业务逻辑实现；
+
+7. roncoo-pay-web-boss
+    运营管理系统；
+
+8. roncoo-pay-web-gateway
+    支付网关；
+
+9. roncoo-pay-web-merchant
+    商户后台；
+
+10. roncoo-pay-web-sample-shop
+    支付测试展示项目；
 ----------------------------------------------------------------------------------
 
 ######应用架构：
