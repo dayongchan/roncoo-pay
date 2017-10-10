@@ -91,6 +91,15 @@ jQuery 框架：DWZ
 
 9. 拷贝roncoo-pay-web-boss.war、roncoo-pay-web-gateway.war、roncoo-pay-web-sample-shop.war、roncoo-pay-web-merchant.war至tomcat启动
 
+## 核心业务流程
+1.支付流程
+![支付流程](http://static.roncoo.com/images/PmwcQyNNrRDxEDTkHswXCSHKKYHTzQzk.png)
+
+2.对账流程
+![对账流程](http://static.roncoo.com/images/CJZzhFsfiWDhdp4rAfnEhPfzsjHFdyFT.png)
+
+3.结算流程
+![结算流程](http://static.roncoo.com/images/RA3jrJZxy26sCWkT6RYRazRPcrrF7zxF.png)
 
 
 ## 数据表清单
