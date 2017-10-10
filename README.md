@@ -91,6 +91,9 @@ jQuery 框架：DWZ
 
 9. 拷贝roncoo-pay-web-boss.war、roncoo-pay-web-gateway.war、roncoo-pay-web-sample-shop.war、roncoo-pay-web-merchant.war至tomcat启动
 
+## 应用架构：
+![应用架构](http://git.oschina.net/uploads/images/2016/0726/171546_239efc3b_860625.jpeg "应用架构")
+
 ## 核心业务流程
 1.支付流程
 ![支付流程](http://static.roncoo.com/images/PmwcQyNNrRDxEDTkHswXCSHKKYHTzQzk.png)
@@ -123,9 +126,6 @@ jQuery 框架：DWZ
 * 资金账户流水表     rp_account_history
 * 资金账户表       rp_account
 
-## 应用架构：
-![应用架构](http://git.oschina.net/uploads/images/2016/0726/171546_239efc3b_860625.jpeg "应用架构")
-
 ---------
 
 在线支付演示：http://demo.pay.roncoo.com
@@ -135,3 +135,7 @@ jQuery 框架：DWZ
 系统操作说明：http://www.roncoo.com/article/detail/124375
 
 系统详细介绍：http://www.roncoo.com/article/detail/124373
+
+系统搭建部署：http://www.roncoo.com/article/detail/124511
+
+官方QQ群：287684257，欢迎大家加入，共同探讨互联网金融支付行业业务、技术等。
