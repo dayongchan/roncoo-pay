@@ -6,6 +6,7 @@
 *.settings
 *.mvn
 *.springBeans
+.settings
 .project
 .classpath
 
